@@ -2,8 +2,8 @@ import pickle
 import streamlit as st
 
 # Load the vectorizer and the model
-v = pickle.load(open('vectorizer.pkl', 'rb'))
-loaded_model = pickle.load(open('trained_model.pkl', 'rb'))
+v = pickle.load(open('vectorizer.pkl', 'wb'))
+loaded_model = pickle.load(open('trained_model.pkl', 'wb'))
 
 st.title("Hotel Sentiment Analysis")
 
